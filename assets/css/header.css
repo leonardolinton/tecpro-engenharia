@@ -38,7 +38,7 @@
 #menu {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 #menu a {
@@ -97,7 +97,6 @@
     #nav.active #menu {
         visibility: visible;
         overflow-y: auto;
-
         right: 0;
     }
     #menu a {
@@ -111,8 +110,8 @@
         background: var(--color-01);
         cursor: pointer;
         gap: 10px;
-        border-radius: 5px;
     }
+
     #hamburger {
         border-top: 2px solid;
         width: 20px;

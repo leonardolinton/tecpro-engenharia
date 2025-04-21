@@ -97,5 +97,11 @@
 
     .home-box-titles{
         text-align: center;
+        width: 100%;
+    }
+
+    .home-box p{
+        max-width: 100%;
+        text-align: justify;
     }
 }
