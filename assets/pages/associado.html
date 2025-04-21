@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== FAVICON ==========-->
+    <link rel="icon" type="imagem/png" href="../img/logo2.png" />
+    <!--========== STYLE CSS ==========-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--========== AOS ANIMATE SCROLL ==========-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Detalhes do Advogado</title>
+</head>
+
+<body>
+    <!--========== MENU START ==========-->
+    <header id="header">
+        <nav id="nav" class="container">
+            <a href="../../index.html"><img id="logo" src="../img/logo.png"></a>
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="../../index.html">home</a></li>
+                <li><a href="../../index.html#sobre">sobre</a></li>
+                <li><a href="../../index.html#equipe">equipe</a></li>
+                <li><a href="../../index.html#contato">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--========== MENU END ==========-->
+    <main id="advogado">
+        <section class="advogado-box" data-aos="fade-down" data-aos-duration="900" data-aos-delay="200"
+        data-aos-easing="ease-in-out">
+            <div class="advogado-box-left">
+                <img src="" alt="" id="advogado-img">
+            </div>
+            <div class="advogado-box-right" >
+                <h2 id="advogado-nome"></h2>
+                <h3 id="advogado-registro"></h3>
+                <h4 id="advogado-email"></h4>
+                <ul id="advogado-curriculo"></ul>
+                <div>
+                    <p>Áreas de especialidade: <span id="advogado-especialidades"></span></p>
+                </div>
+            </div>
+        </section>
+        <a href="../../index.html#equipe" class="advogado-btn">VOLTAR</a>
+    </main>
+
+    <!--============ FOOTER END ============-->
+    <footer id="rodape">
+        <span>
+            <p class="footer_copy">Copyright © 2024 | All rights reserved.</p>
+        </span>
+    </footer>
+    <!--============ FOOTER END ============-->
+
+    <!--========== JAVASCRIPT ==========-->
+    <script src="../js/menu-mobile.js"></script>
+    <script src="../js/associado.js"></script>
+    <!--========== AOS ANIMATION ==========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
+</body>
+
+</html>

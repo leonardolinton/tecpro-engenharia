@@ -1,0 +1,141 @@
+/*--========== HEADER START ==========*/
+#header {
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-02);
+    box-shadow: rgba(90, 90, 90, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: fixed;
+    z-index: 100;
+}
+
+#nav {
+    width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
+#nav a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--bg-color);
+    font-weight: var(--fs-m);
+    text-transform: capitalize;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+#menu a {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: var(--h4);
+    transition: 0.5s;
+    position: relative;
+}
+
+#menu a:hover{
+    color: var(--color-01);
+}
+
+
+#btn-mobile {
+    display: none;
+    color: var(--color-02);
+}
+/*--========== HEADER END ==========*/
+
+/*--========== HEADER RESPONSIVE ==========*/
+
+@media (max-width: 1400px) {
+    #header{
+        padding: 0 5vw;
+    }
+}
+
+@media (max-width: 950px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        height: 90vh;
+        width: 90vw;
+
+        position: absolute;
+
+        top: 10vh;
+        right: -100vw;
+
+        background: var(--color-02);
+        transition: 0.5s;
+        z-index: 1000;
+
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        overflow-y: auto;
+
+        right: 0;
+    }
+    #menu a {
+        padding: 20px;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 10px;
+        font-size: 15px;
+        border: none;
+        background: var(--color-01);
+        cursor: pointer;
+        gap: 10px;
+        border-radius: 5px;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

@@ -1,0 +1,42 @@
+:root {
+    /*========== FONTS FAMILY ==========*/
+    --font-title: "Inter", sans-serif;
+    --font-text: "Poppins", sans-serif;
+
+    /*========== DIMENSÕES ==========*/
+    --max-width: 1440px;
+    --max-height: 100vh;
+
+    /*========== TAMANHO DA FONT ==========*/
+    --h1: 3.3rem;
+    --h2: 2.5rem;
+    --h3: 1.5rem;
+    --h4: 1.1rem;
+
+    --fs1: 1.1em;
+    --fs2: 0.8rem;
+
+    /*========== PESO DA FONT ==========*/
+    --fs-l: 300;
+    --fs-m: 500;
+    --fs-b: 700;
+
+    /*========== CORES ==========*/
+    --color-01: #002359;
+    --color-02: #FF5820;
+    --color-03: #2d2d30;
+    --bg-color: #eaecf0;
+}
+
+/*========== FONTS RESPONSIVE ==========*/
+@media screen and (max-width: 950px) {
+    :root {
+        --h1: 2.5rem;
+        --h2: 2rem;
+        --h3: 1.3rem;
+        --h4: 1.1rem;
+
+        --fs1: 0.9rem;
+        --fs2: 0.7rem;
+    }
+}

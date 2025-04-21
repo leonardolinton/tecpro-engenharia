@@ -1,0 +1,103 @@
+#conecta{
+    width: 100%;
+    padding: 10vh 0;
+    display: flex;
+    gap: 7vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conecta h2{
+    font-size: var(--h2);
+    font-weight: var(--fs-b);
+    font-family: var(--font-title);
+    color: var(--color-03);
+}
+
+.conecta-box{
+    width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+}
+
+.conecta-box-left{
+    width: 45%;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.conecta-box-left iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+
+.conecta-box-right{
+    width: 47%;
+    height: 100%;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.conecta-box-right h3{
+    font-size: var(--h3);
+    font-weight: var(--fs-m);
+    color: var(--color-03);
+}
+
+.conecta-box-right-medias{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+
+.conecta-box-right-medias ion-icon{
+    cursor: pointer;
+    font-size: var(--h2);
+    color: var(--color-02);
+    transition: 0.3s ease-in-out;
+}
+
+
+.conecta-box-right-medias ion-icon:hover{
+    transform: scale(1.5);
+    color: var(--color-03);
+}
+
+@media screen and (max-width: 1440px) {
+    #conecta{
+        padding: 10vh 5vw;
+    }
+
+    .conecta-box {
+    width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 930px){
+    .conecta-box {
+        flex-direction: column; 
+        gap: 3rem;   
+    }
+
+    .conecta-box-left{
+        width: 100%;
+    }
+
+    .conecta-box-right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .conecta-box-right-medias{
+        justify-content: center;
+    }
+}

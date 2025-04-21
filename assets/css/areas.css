@@ -1,0 +1,97 @@
+#areas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 0 5vh;
+    overflow: hidden;
+}
+
+.areas-box{
+    width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.areas-box-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.areas-box-card{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--color-02);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.areas-box-card-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--color-01);
+    border: solid 1px var(--color-01); 
+}
+
+.areas-box-card-content p{
+    font-size: var(--fs1);
+    font-weight: var(--fs-b);
+    font-family: var(--font-title);
+}
+
+.areas-box-card img{
+    width: 50px;
+    height: 50px;
+}
+
+.area-box-card-btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: var(--color-03);
+    background-color: var(--color-01);
+    transition: 0.3s;
+}
+
+.area-box-card-btn:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1440px){
+    #areas{
+        padding: 11vh 0 5vh;
+        overflow: hidden;
+    }
+
+    .areas-box-cards{
+        gap: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+    .areas-box-cards{
+        gap: 1rem;
+    
+    }
+
+    .areas-box-card{
+        width: 46%;
+        height: 200px;
+    }
+}

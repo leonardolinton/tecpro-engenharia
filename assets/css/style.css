@@ -1,0 +1,70 @@
+/*========== GOOGLE FONTS - POPPINS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*========== GOOGLE FONTS - MERRIWEATHER ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("./header.css");
+@import url("./variaveis.css");
+@import url("./home.css");
+@import url("./areas.css");
+@import url("./sobre.css");
+@import url("./equipe.css");
+@import url("./contato.css");
+@import url("./associado.css");
+@import url("./mapa.css");
+@import url("./footer.css");
+@import url("./saiba.css"); 
+@import url("./conecta.css");
+
+/*============ CONFIGURAÇÕES DEFAULT ============*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: var(--font-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+main{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/*========== SELEÇÃO =========*/
+::selection {
+  background-color: var(--color-02);
+  color: var(--bg-color);
+}
+
+/*========== BARRA DE ROLAGEM ==========*/
+
+/* LARGURA DA BARRA */
+body::-webkit-scrollbar {
+  width: 9px;
+  
+}
+
+
+/* COR DA BARRA */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-02);
+  border: solid 1px black;
+}
+
+/* BACKGROUND DA BARRA */
+body::-webkit-scrollbar-track {
+  background: var(--color-01); 
+}
