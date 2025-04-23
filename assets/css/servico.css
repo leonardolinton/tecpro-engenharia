@@ -1,0 +1,129 @@
+#servico {
+    min-height: 100vh;
+    width: 100%;
+    padding: 15vh 0 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/banner_home_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#servico::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.servico-box {
+    max-width: var(--max-width);
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    background: var(--color-03);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.servico-box-left{
+    width: 0%;
+}
+
+.servico-box-title{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.servico-box-title img {
+    width: 100px;
+    height: 100px;
+}
+
+.servico-box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    color: var(--color-04);    
+}
+
+.servico-box-title h2{
+    font-size: var(--h2);
+    font-weight: var(--fs-b);
+    font-family: var(--font-text);
+}
+
+.servico-box-title h3{
+    font-size: var(--h3);
+    font-weight: var(--fs-m);
+    
+}
+
+.card-item-bottom h4{
+    font-size: var(--h4);
+    font-weight: var(--fs-m);
+    color: var(--color-03);
+}
+
+.servico-box-content ul{
+    margin-left: 1rem;
+}
+
+.servico-box-content li {
+    font-size: var(--fs);
+    list-style: square;
+    text-align: justify;
+    list-style-position: initial;
+    margin: 10px 0;
+}
+
+.servico-btn{
+    z-index: 2;
+    padding: 0.7rem 1rem;
+    color: var(--color-04);
+    background-color: var(--color-03);
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.servico-btn:hover{
+    color: var(--color-02);
+}
+
+
+@media (max-width: 1000px) {
+    .servico-box{
+        flex-direction: column;
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .servico-box-title{
+        width: 90%;
+    }
+
+    .servico-box-title h2{
+        font-size: 1.5rem;
+    }
+
+    .servico-box-title h3{
+        font-size: 1.1rem;
+    }
+
+    .servico-box-title li{
+        font-size: 0.9rem;
+    }
+}

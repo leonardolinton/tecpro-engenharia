@@ -5,6 +5,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(../img/banner_home_02.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    overflow: hidden;
 }
 
 #home::after {
@@ -13,16 +20,12 @@
     max-height: inherit;
     position: absolute;
     inset: 0;
-    background-image: url(../img/banner_home.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: screen;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 0) 50%);
 }
 
 .home-box {
     width: var(--max-width);
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,7 +41,7 @@
     font-weight: var(--fs-b);
     text-transform: capitalize;
     line-height: 100%;
-    font-family: var(--font-title);
+    font-family: var(--font-text);
     margin: 1rem 0;
     text-shadow: rgba(255, 255, 255, 0.63) 0.1em 0.1em 0.2em;
 
@@ -46,6 +49,7 @@
 
 .home-box h2{
     color: var(--color-01);
+    font-family: var(--font-text);
     font-size: var(--h2);
     font-weight: var(--fs-b);
     text-transform: capitalize;
@@ -67,7 +71,7 @@
     background-color: var(--color-02);
     font-size: 1rem;
     text-decoration: none;
-    color: var(--bg-color);
+    color: var(--color-04);
     font-weight: var(--fs-m);
     transition: 0.5s ease-out;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -85,6 +89,11 @@
 
     .home-box {
         gap: 2rem;
+    }
+
+    #home::after {
+        background: linear-gradient(360deg,rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 70%);
+    
     }
 
 }

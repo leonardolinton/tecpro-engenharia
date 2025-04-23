@@ -3,7 +3,7 @@ const swiper = new Swiper('.slider-wrapper', {
   grabCursor: true,
   spaceBetween: 30,
   autoplay: {
-      delay: 7500,           // Delay between transitions (3 seconds)
+      delay: 7000,           // Delay between transitions (3 seconds)
       disableOnInteraction: false, // Continue auto-scrolling even after user interaction
     },
 

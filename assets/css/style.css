@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*========== GOOGLE FONTS - MERRIWEATHER ==========*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*========== GOOGLE FONTS - Titillium Web ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
 @import url("./header.css");
 @import url("./variaveis.css");
 @import url("./home.css");
+@import url("./servicos.css");
 @import url("./areas.css");
 @import url("./sobre.css");
-@import url("./equipe.css");
 @import url("./contato.css");
-@import url("./associado.css");
+@import url("./servico.css");
 @import url("./mapa.css");
 @import url("./footer.css");
 @import url("./saiba.css"); 

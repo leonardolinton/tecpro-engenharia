@@ -5,7 +5,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    background-color: var(--color-02);
+    background-color: var(--color-04);
     box-shadow: rgba(90, 90, 90, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     position: fixed;
     z-index: 100;
@@ -30,8 +30,8 @@
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: var(--bg-color);
-    font-weight: var(--fs-m);
+    color: var(--color-01);
+    font-weight: var(--fs-b);
     text-transform: capitalize;
 }
 
@@ -52,7 +52,7 @@
 }
 
 #menu a:hover{
-    color: var(--color-01);
+    color: var(--color-02);
 }
 
 
@@ -86,7 +86,7 @@
         top: 10vh;
         right: -100vw;
 
-        background: var(--color-02);
+        background: var(--color-04);
         transition: 0.5s;
         z-index: 1000;
 
@@ -99,9 +99,11 @@
         overflow-y: auto;
         right: 0;
     }
+
     #menu a {
         padding: 20px;
     }
+    
     #btn-mobile {
         display: flex;
         padding: 10px;

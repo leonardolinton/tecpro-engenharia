@@ -1,7 +1,9 @@
 :root {
     /*========== FONTS FAMILY ==========*/
     --font-title: "Inter", sans-serif;
-    --font-text: "Poppins", sans-serif;
+    --font-text: "Titillium Web", sans-serif;
+    
+
 
     /*========== DIMENSÕES ==========*/
     --max-width: 1440px;
@@ -25,7 +27,7 @@
     --color-01: #002359;
     --color-02: #FF5820;
     --color-03: #2d2d30;
-    --bg-color: #eaecf0;
+    --color-04: #ffffff;
 }
 
 /*========== FONTS RESPONSIVE ==========*/
