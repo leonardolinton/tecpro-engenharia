@@ -10,7 +10,7 @@
     --max-height: 100vh;
 
     /*========== TAMANHO DA FONT ==========*/
-    --h1: 3.3rem;
+    --h1: 5rem;
     --h2: 2.5rem;
     --h3: 1.5rem;
     --h4: 1.1rem;
@@ -19,15 +19,23 @@
     --fs2: 0.8rem;
 
     /*========== PESO DA FONT ==========*/
-    --fs-l: 300;
-    --fs-m: 500;
+    --fs-l: 400;
+    --fs-m: 600;
     --fs-b: 700;
 
     /*========== CORES ==========*/
+
     --color-01: #002359;
+    --color-02: #FF7420;
+    --color-03: #191A19;
+    --color-04: #ffffff;
+    --color-05: #ffa500; 
+
+
+    /* --color-01: #002359;
     --color-02: #FF5820;
     --color-03: #2d2d30;
-    --color-04: #ffffff;
+    --color-04: #ffffff; */
 }
 
 /*========== FONTS RESPONSIVE ==========*/

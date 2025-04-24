@@ -5,7 +5,7 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    background-color: var(--color-04);
+    background-color: var(--color-03);
     box-shadow: rgba(90, 90, 90, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     position: fixed;
     z-index: 100;
@@ -22,7 +22,7 @@
 #logo {
     display: flex;
     justify-content: center;
-    height: 8vh;
+    height: 7vh;
 }
 
 #nav a {
@@ -30,8 +30,8 @@
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: var(--color-01);
-    font-weight: var(--fs-b);
+    color: var(--color-04);
+    font-weight: var(--fs-l);
     text-transform: capitalize;
 }
 
@@ -44,7 +44,7 @@
 #menu a {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     font-size: var(--h4);
     transition: 0.5s;
@@ -55,6 +55,14 @@
     color: var(--color-02);
 }
 
+#menu .menu-bnt {
+    background-color: var(--color-02);
+    border-radius: 5px;
+}
+
+#menu .menu-bnt a:hover{
+    color: var(--color-03);
+}
 
 #btn-mobile {
     display: none;
@@ -86,7 +94,7 @@
         top: 10vh;
         right: -100vw;
 
-        background: var(--color-04);
+        background: var(--color-03);
         transition: 0.5s;
         z-index: 1000;
 
@@ -109,14 +117,16 @@
         padding: 10px;
         font-size: 15px;
         border: none;
-        background: var(--color-01);
+        background: var(--color-02);
         cursor: pointer;
         gap: 10px;
+        border-radius: 5px;
     }
 
     #hamburger {
         border-top: 2px solid;
         width: 20px;
+        color: var(--color-03);
     }
     #hamburger::after,
     #hamburger::before {
