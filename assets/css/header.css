@@ -56,12 +56,17 @@
 }
 
 #menu .menu-bnt {
-    background-color: var(--color-02);
     border-radius: 5px;
+    background-color: var(--color-02);
+    
+}
+
+#menu .menu-bnt a{
+    color: black;
 }
 
 #menu .menu-bnt a:hover{
-    color: var(--color-03);
+    color: white;
 }
 
 #btn-mobile {
