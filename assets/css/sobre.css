@@ -1,14 +1,15 @@
 #sobre {
     width: 100%;
     position: relative;
-    padding: 10vh 0vh;
     overflow: hidden;
+    background-color: var(--color-03);
 }
 
 .sobre-box {
     width: var(--max-width);
     display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
+    align-items:end;
     justify-content: space-between;
     margin: auto;
 }
@@ -20,56 +21,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin: 10vh 0;
 }
 
 .sobre-box-left h2 {
-    font-family: var(--font-title);
+    font-family: var(--font-text);
     font-size: var(--h2);
     font-weight: var(--fs-b);
-    color: var(--color-02);
+    color: var(--color-04);
     margin-bottom: 2.5rem;
 }
 
+
+.sobre-box-left h2 span{
+    color: var(--color-02);
+    font-size: var(--h2)}
+
 .sobre-box-left p {
     text-align: justify;
-    font-weight: var(--fs-m);
+    font-weight: var(--fs-l);
     font-size: var(--f1-font-size);
-    color: var(--color-02);
-}
-
-.sobre-btn{
-    border-radius: 50px;
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    color: var(--color-01);
-    font-size: var(--fs1);
-    font-weight: var();
-    background-color: var(--color-03);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-.sobre-btn:hover{
-    opacity: 0.9;
+    color: var(--color-04);
 }
 
 .sobre-box-right {
     width: 45%;
-    height: 45vh;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.185) 0px 5px 15px;
-    position: relative;
+    height: 65vh;
     overflow: hidden;
+    position: relative;
 }
 
-.sobre-box-right::after{
+/* .sobre-box-right::after{
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0);
-}
+    background: rgba(0, 0, 0, 0.418);
+} */
 
 .sobre-box-right img{
     width: 100%;
@@ -77,18 +67,19 @@
     transition: 0.2s ease-out;
 }
 
-.sobre-box-right:hover img{
-    transform: scale(1.2);
-}
 
 
 @media screen and (max-width: 1440px) {
     #sobre{
-        padding: 10vh 5vw;
+        padding: 0vh 5vw;
     }
 
     .sobre-box {
     width: 100%;
+    }
+
+    .sobre-box-left{
+        margin: 5vh 0;
     }
 }
 
@@ -96,7 +87,7 @@
     .sobre-box {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
     .sobre-box-left {
