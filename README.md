@@ -1,2 +1,0 @@
-# tecpro
-TecPro Engenheria

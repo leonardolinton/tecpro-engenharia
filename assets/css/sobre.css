@@ -1,114 +1,87 @@
-#sobre {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--color-03);
+
+/* sobre Section */
+.sobre {
+  background-color: var(---color-02);
 }
 
-.sobre-box {
-    width: var(--max-width);
-    display: flex;
-    flex-direction: row-reverse;
-    align-items:end;
-    justify-content: space-between;
-    margin: auto;
+.sobre-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
 }
 
-
-.sobre-box-left {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin: 10vh 0;
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.sobre-box-left h2 {
-    font-family: var(--font-text);
-    font-size: var(--h2);
-    font-weight: var(--fs-b);
-    color: var(--color-04);
-    margin-bottom: 2.5rem;
+.stat-box {
+  background-color: var(--color-01);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
 }
 
-
-.sobre-box-left h2 span{
-    color: var(--color-02);
-    font-size: var(--h2)}
-
-.sobre-box-left p {
-    text-align: justify;
-    font-weight: var(--fs-l);
-    font-size: var(--f1-font-size);
-    color: var(--color-04);
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
 }
 
-.sobre-box-right {
-    width: 45%;
-    height: 65vh;
-    overflow: hidden;
-    position: relative;
+.stat-number {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--color-03);
+  margin-bottom: 0.5rem;
 }
 
-/* .sobre-box-right::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.418);
-} */
-
-.sobre-box-right img{
-    width: 100%;
-    height: 100%;
-    transition: 0.2s ease-out;
+.sobre-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-
-
-@media screen and (max-width: 1440px) {
-    #sobre{
-        padding: 0vh 5vw;
-    }
-
-    .sobre-box {
-    width: 100%;
-    }
-
-    .sobre-box-left{
-        margin: 5vh 0;
-    }
+.sobre-card {
+  background-color: var(--color-02);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  transition: var(--transition);
 }
 
-@media screen and (max-width: 1070px) {
-    .sobre-box {
-        display: flex;
-        flex-direction: column;
-        /* gap: 2rem; */
-    }
-
-    .sobre-box-left {
-        width: 100%;
-        align-items: center;
-    }
-
-    .sobre-box-left h2 {
-        text-align: left;
-    }
-
-    .sobre-box-right {
-        width: 100%;
-        height: 50vh;
-        border-radius: none;
-    }
+.sobre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
 }
 
-@media screen and (max-width: 750px) {
-    .sobre-box-right {
-        width: 100%;
-        height: 30vh;
-    }
+.card-icon {
+  background-color: rgba(255, 81, 0, 0.1);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
+
+.card-icon i {
+  width: 36px;
+  height: 36px;
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#servicos{
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url('../img/bg_home_01.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+

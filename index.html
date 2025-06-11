@@ -1,353 +1,677 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--========== FAVICON ==========-->
-  <link rel="icon" type="imagem/png" href="./assets/img/icon.png" />
-  <!--========== STYLE CSS ==========-->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!--========== AOS ANIMATE SCROLL ==========-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--===== SWIPER JS CSS=====-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <title>TECPRO</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecPro - Engenharia Civil</title>
+  <meta name="description" content="Empresa de engenharia civil com soluções inovadoras e sustentáveis" />
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <link href="././assets/css/style.css" rel="stylesheet">
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="./assets/js/script.js" type="module"></script>
 </head>
 
 <body>
-
-  <!--========== MENU START ==========-->
-  <header id="header">
+  <!-- Navbar -->
+  <header id="header" class="menuNav">
     <nav id="nav" class="container">
-      <a href="index.html"><img id="logo" src="./assets/img/logo4.png"></a>
+      <a href="index.html"><img id="logo" src="./assets/img/logo-tecpro_.png"></a>
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span id="hamburger"></span>
       </button>
       <ul id="menu" role="menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#servicos">serviços</a></li>
-        <li><a href="#projetos">projetos</a></li>
-        <li><a href="#clientes">clientes</a></li>
-        <li class="menu-bnt"><a href="#contato">contato</a></li>
+        <li><a href="#home" class="menu-link">home</a></li>
+        <li><a href="#sobre" class="menu-link">sobre</a></li>
+        <li><a href="#servicos" class="menu-link">serviços</a></li>
+        <li><a href="#projetos" class="menu-link">projetos</a></li>
+        <li><a href="#clientes" class="menu-link">clientes</a></li>
+        <li><a href="#contato" class="menu-link">contato</a></li>
       </ul>
     </nav>
   </header>
-  <!--========== MENU END ==========-->
-  <main>
-    <!--========== HOME START ==========-->
-    <section id="home">
-      <div class="home-box" data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out">
-        <div class="home-box-titles">
-          <h1>TECPRO</h1>
-          <h2>Tecnologia em Projetos</h2>
-        </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1><span>TECPRO</span> construindo o <span>futuro</span>,<br>fundação por fundação</h1>
         <p>Conheça mais sobre a empresa Tecpro, que vem hà 12 anos crescendo e aprimorando seus métodos de
-          desenvolvimento de projetos.</p>
-        <div class="home-btns">
-          <a class="home-btn1" href="#sobre"><span>Saiba Mais</span></a>
-          <a class="home-btn2" href="#"><span>Nossos Projetos</span></a>
+          desenvolvimentos de projetos.</p>
+        <div class="hero-buttons">
+          <a href="#sobre" class="btn btn-primary">Saiba Mais</a>
+          <a href="#projetos" class="btn btn-outline">Nossos Projetos</a>
         </div>
       </div>
-    </section>
-    <!--========== HOME END ==========-->
-    <!--========== SOBRE START ==========-->
-    <section id="sobre">
-      <div class="sobre-box">
-        <div class="sobre-box-left">
-          <h2><span>Desde 2002,</span> construindo o futuro com excelência</h2>
-          <p data-aos="fade-down" data-aos-duration="700" data-aos-delay="0" data-aos-easing="ease-in-out">
-            Com o objetivo de atender clientes e parceiros de forma diferenciada e personalizada. Atua nas áreas de
-            projetos, construções e consultorias, consolidando ao longo desses anos grandes projetos residenciais,
-            comerciais, industriais, institucionais e de infraestrutura urbana, adquirindo um acervo técnico abrangente
-            nas áreas em que atua.
-          </p>
-          <br>
-          <p data-aos="fade-down" data-aos-duration="700" data-aos-delay="100" data-aos-easing="ease-in-out">
-            A empresa é composta por profissionais com larga experiência na execução de projetos e obras, oferecendo,
-            desta forma, soluções ágeis, eficazes e totalmente integradas com foco nos clientes.
-          </p>
-          <br>
-          <p data-aos="fade-down" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-in-out">
-            Por utilizar os melhores softwares para arquitetura e engenharia disponíveis no mercado, foi possível a
-            implementação do BIM (Building Information Modeling), que significa modelo de informação da construção, uma
-            evolução tecnológica que permite uma completa compatibilização entre todos os projetos e um orçamento
-            preciso, com a geração de serviços e quantitativos de todas as disciplinas.
-          </p>
-          <br>
+    </div>
+  </section>
+
+  <!-- Sobre Section -->
+  <section id="sobre" class="sobre section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sobre Nós</h2>
+        <p>Há mais de uma década entregando excelência em engenharia civil com projetos
+          que combinam inovação, sustentabilidade e qualidade.</p>
+      </div>
+
+      <div class="sobre-content">
+        <div class="sobre-text">
+          <p>Fundada em 2010, a <span class="highlight">TecPro</span> nasceu
+            da visão de transformar a engenharia civil no Brasil através de projetos
+            inovadores e sustentáveis. Nossa equipe de engenheiros altamente qualificados
+            trabalha com dedicação para entregar soluções que atendam às necessidades
+            específicas de cada cliente.</p>
+          <p>Nossa missão é criar estruturas que não apenas atendam aos mais altos
+            padrões de segurança e qualidade, mas também contribuam positivamente
+            para as comunidades onde atuamos e para o meio ambiente.</p>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">Projetos Concluídos</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">14</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Profissionais</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">30</div>
+              <div class="stat-label">Premiações</div>
+            </div>
+          </div>
         </div>
-        <div class="sobre-box-right" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300"
-          data-aos-easing="ease-in-out">
-          <img src="./assets/img/bg_saiba.png" alt="Imagem sobre">
+
+        <div class="sobre-cards">
+
+
+          <div class="sobre-card">
+            <div class="card-icon">
+              <i class="icon-home"></i>
+            </div>
+            <div class="card-content">
+              <h3>Crença</h3>
+              <p>Acreditamos que inovação, excelência técnica, trabalho em equipe e foco no cliente são a base para
+                soluções eficazes e relacionamentos duradouros.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="card-icon">
+              <i class="icon-users"></i>
+            </div>
+            <div class="card-content">
+              <h3>Valores</h3>
+              <p>Investir em inovação e pessoas, priorizando a qualidade, o respeito e a compreensão das necessidades
+                dos clientes para superar desafios e construir confiança.</p>
+            </div>
+          </div>
+
+          <div class="sobre-card">
+            <div class="card-icon">
+              <i class="icon-target"></i>
+            </div>
+            <div class="card-content">
+              <h3>Missão</h3>
+              <p>Prestar serviços de engenharia com foco na satisfação do cliente, agregando qualidade, agilidade,
+                inovação e otimização dos recursos.</p>
+            </div>
+          </div>
+
+
+          <div class="sobre-card">
+            <div class="card-icon">
+              <i class="icon-building"></i>
+            </div>
+            <div class="card-content">
+              <h3>Visão</h3>
+              <p>Sermos reconhecidos pela nossa qualidade e capacidade de inovação na prestação de serviços.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
-    <!--========== SOBRE END ==========-->
+    </div>
+  </section>
 
+  <!-- servicos Section -->
+  <section id="servicos" class="servicos section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="servicos-text">Nossos Serviços</h2>
+        <p class="servicos-text">Oferecemos uma ampla gama de serviços de engenharia civil para atender às
+          diversas necessidades de nossos clientes, sempre com excelência técnica e inovação.</p>
+      </div>
 
-    <!--========== SERVIÇOS START ==========-->
-    <!--
-    <section id="servicos">
-      <div class="servicos-box swiper">
-        <h2>Nossos Serviços</h2>
-        <p>
-          Nossos projetos são elaborados por profissionais qualificados e treinados para cada disciplina que atuamos.
-          Investimos na aquisição dos melhores softwares para arquitetura e engenharia disponíveis no mercado, o que nos
-          possibilitou a implementação do BIM (Building Information Modeling), que significa modelo de informação da
-          construção, uma evolução tecnológica que permite uma completa compatibilização entre todos os projetos e um
-          orçamento preciso, com a geração de serviços e quantitativos de todas as disciplinas.
+      <div class="servicos-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-building"></i>
+          </div>
+          <h3>Projetos Estruturais</h3>
+          <p>Desenvolvimento de projetos estruturais para edificações residenciais, comerciais e industriais, com foco
+            em segurança e durabilidade.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-home"></i>
+          </div>
+          <h3>Construção Residencial</h3>
+          <p>Construção de casas e edifícios residenciais com alto padrão de qualidade, atendendo às necessidades
+            específicas de cada cliente.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-warehouse"></i>
+          </div>
+          <h3>Construção Comercial</h3>
+          <p>Construção de edifícios comerciais e industriais, com soluções inovadoras que otimizam espaços e reduzem
+            custos operacionais.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-grid"></i>
+          </div>
+          <h3>Infraestrutura</h3>
+          <p>Desenvolvimento e execução de projetos de infraestrutura urbana, incluindo pontes, viadutos, estradas e
+            sistemas de drenagem.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-hammer"></i>
+          </div>
+          <h3>Reformas e Retrofits</h3>
+          <p>Reformas estruturais e retrofits em edificações existentes, com foco na modernização e aumento da vida útil
+            da estrutura.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-file"></i>
+          </div>
+          <h3>Consultoria</h3>
+          <p>Consultoria técnica especializada em engenharia civil, oferecendo soluções personalizadas para desafios
+            específicos.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-activity"></i>
+          </div>
+          <h3>Gestão de Obras</h3>
+          <p>Gestão completa de projetos de construção, garantindo cumprimento de prazos, orçamentos e padrões de
+            qualidade.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-shield"></i>
+          </div>
+          <h3>Laudos Técnicos</h3>
+          <p>Elaboração de laudos técnicos, perícias e vistorias para avaliação de condições estruturais e identificação
+            de patologias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos Section -->
+  <section id="projetos" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header">Projetos</h2>
+        <p>Oferecemos uma ampla gama de serviços de engenharia civil para atender às
+          diversas necessidades de nossos clientes, sempre com excelência técnica e inovação.
         </p>
-        <div class="slider-wrapper">
-          <div class="card-list swiper-wrapper">
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/instalacoes-prediais.jpg" alt="Imagem instalação predial">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_01.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>INSTALAÇÕES PREDIAIS</h4>
-                <a href="./assets/pages/servicos.html?servico=1" class="card-btn">Conhecer</a>
-              </div>
-            </div>
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/fundacao.jpg" alt="Imagem Denize Aufiero">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_02.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>FUNDAÇÕES</h4>
-                <a href="./assets/pages/servicos.html?servico=2" class="card-btn">Conhecer</a>
-              </div>
-            </div>
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/estrutura.jpg" alt="Imagem Danielle Aufiero M. de Paula">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_03.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>ESTRUTURAS</h4>
-                <a href="./assets/pages/servicos.html?servico=3" class="card-btn">Conhecer</a>
-              </div>
-            </div>
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/infraestrutura-urbana.jpg" alt="Imagem Mario Vitor M. Aufiero">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_04.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>INFRAESTRUTURA URBANA</h4>
-                <a href="./assets/pages/servicos.html?servico=4" class="card-btn">Conhecer</a>
-              </div>
-            </div>
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/contabilizacao.jpg" alt="">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_05.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>COMPATIBILIZAÇÃO DE PROJETOS</h4>
-                <a href="./assets/pages/servicos.html?servico=5" class="card-btn">Conhecer</a>
-              </div>
-            </div>
-            <div class="card-item swiper-slide">
-              <div class="card-item-top">
-                <img class="card-item-img" src="./assets/img/gestao-de-custos.jpg" alt="">
-              </div>
-              <div class="card-item-icon">
-                <img src="./assets/img/card_06.png" alt="">
-              </div>
-              <div class="card-item-bottom">
-                <h4>GESTÃO DE CUSTOS</h4>
-                <a href="./assets/pages/servicos.html?servico=6" class="card-btn">Conhecer</a>
-              </div>
+      </div>
+
+      <div class="projetos-grid">
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/img/projeto-residencial.jpg" alt="Residential">
+            <div class="project-overlay">
+              <h3>Projetos Residênciais</h3>
+              <p>Residential</p>
+              <button class="btn btn-small">Detalhes</button>
             </div>
           </div>
-        -->
-
-    <!-- Carrossel marcação de paginação -->
-    <!-- <div class="swiper-pagination"></div>
-          <!-- Botões de Prev e Next do Carrossel -->
-    <!--
-          <div class="swiper-button-prev swiper-slide-button"></div>
-          <div class="swiper-button-next swiper-slide-button"></div>
+          <div class="project-info">
+            <h3>Projetos Residênciais</h3>
+            <p>Residential</p>
+          </div>
         </div>
-      </div>
-    </section>
-  -->
-    <!--========== SERVIÇOS END ==========-->
 
-    <!--========== AREAS START ==========-->
-    <!--    
-    <section id="areas">
-      <div class="areas-box">
-        <ul class="areas-box-cards">
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="0"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_01.png" alt="">
-              <p>Direito Criminal</p>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/img/projeto-comercial.jpg" alt="Commercial">
+            <div class="project-overlay">
+              <h3>Projetos Comerciais</h3>
+              <p>Commercial</p>
+              <button class="btn btn-small">Detalhes</button>
             </div>
-          </li>
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="50"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_02.png" alt="">
-              <p>Direito Cível</p>
-            </div>
-          </li>
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="100"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_05.png" alt="">
-              <p>Contratos</p>
-            </div>
-          </li>
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="150"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_06.png" alt="">
-              <p>Direito de Família</p>
-            </div>
-          </li>
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_04.png" alt="">
-              <p>Direito Administrativo</p>
-            </div>
-          </li>
-          <li class="areas-box-card" data-aos="fade-down" data-aos-duration="700" data-aos-delay="250"
-            data-aos-easing="ease-in-out">
-            <div class="areas-box-card-content">
-              <img src="./assets/img/areas_07.png" alt="">
-              <p>Improbidade Administrativa</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  -->
-    <!--========== AREA END ==========-->
-
-    <!--========== CONECTA START ==========-->
-    <!--
-    <section id="conecta">
-      <h2>Aufiero Conecta</h2>
-      <div class="conecta-box">
-        <div class="conecta-box-left">
-          <iframe src="https://www.youtube.com/embed/aLWVTLmO_kk?si=wefd0gjZ2i6G8v8c" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="project-info">
+            <h3>Projetos Comerciais</h3>
+            <p>Commercial</p>
+          </div>
         </div>
-        <div class="conecta-box-right" data-aos="fade-down" data-aos-duration="700" data-aos-delay="" data-aos-easing="ease-in-out">
-          <h3>Siga nossas redes sociais e fique por dentro das últimas novidades do nosso escritório</h3>
-          <div class="conecta-box-right-medias" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-in-out">
-            <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
-            <a href="https://br.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/img/projeto-industrial.jpg" alt="Industria">
+            <div class="project-overlay">
+              <h3>Projetos Industriais</h3>
+              <p>Industrial</p>
+              <button class="btn btn-small">Detalhes</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Projetos Industriais</h3>
+            <p>Industrial</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="./assets/img/projeto-institucional.jpg" alt="Instituição">
+            <div class="project-overlay">
+              <h3>Projetos Institucionais</h3>
+              <p>Institucional</p>
+              <button class="btn btn-small">Detalhes</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Projetos Institucionais</h3>
+            <p>Industrial</p>
+          </div>
+        </div>
+        <!--
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Luxury Housing Development">
+            <div class="project-overlay">
+              <h3>Luxury Housing Development</h3>
+              <p>Residential</p>
+              <button class="btn btn-small">Detalhes</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Luxury Housing Development</h3>
+            <p>Residential</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1581112877521-47b5b283791d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+              alt="Shopping Mall Complex">
+            <div class="project-overlay">
+              <h3>Shopping Mall Complex</h3>
+              <p>Commercial</p>
+              <button class="btn btn-small">Detalhes</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Shopping Mall Complex</h3>
+            <p>Commercial</p>
           </div>
         </div>
       </div>
-    </section>
-    -->
-    <!--========== CONECTA END ==========-->
-    <!--============ CONTATO START ============-->
-    <!--
-    <section id="contato" class="container">
-      <div class="contato-title">
-        <h2>Contato</h2>
+    </div>
+  -->
+  </section>
+
+
+  <!-- Clientes Section -->
+  <section id="clientes" class="clientes section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Clientes</h2>
+        <p>Atendemos com excelência clientes de diversos setores, sempre entregando
+          projetos que superam expectativas e criam impacto positivo.</p>
       </div>
 
-      <div class="contato-box">
-        <div>
-          <ul class="contato-list">
-            <li data-aos="fade-down" data-aos-duration="700" data-aos-delay="0" data-aos-easing="ease-in-out">
-              <h3 class="item-title">Telefone</h3>
-              <p>(92) 3232-6100</p>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="700" data-aos-delay="100" data-aos-easing="ease-in-out">
-              <h3 class="item-title">Email</h3>
-              <p>aufiero@aufiero.adv.br</p>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-in-out">
-              <h3 class="item-title">Endereço</h3>
-              <p>R. Belo Horizonte, 1050 - 1 Andar - Adrianópolis, Manaus - AM, 69057-060</p>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-in-out">
-              <h3 class="item-title">Horário de Funcionamento</h3>
-              <p>Segunda a Sexta | 08:00–17:30</p>
-            </li>
-          </ul>
+      <div class="carousel-container">
+        <button class="carousel-button prev" aria-label="Cliente anterior">&#10094;</button>
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client1.png" alt="Cliente 1">
+              <p>Petrobrás</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client2.png" alt="Cliente 2">
+              <p>Infraero</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client3.png" alt="Cliente 3">
+              <p>Ministério da Saúde</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client4.png" alt="Cliente 4">
+              <p>Tribunal de Justiça do Estado do Amazonas</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client5.png" alt="Cliente 5">
+              <p>SEBRAE - AM</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client6.png" alt="Cliente 6">
+              <p>IFAM -AM</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client7.png" alt="Cliente 7">
+              <p>SESI - AM</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client8.png" alt="Cliente 8">
+              <p>SEBRAE - AM</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client9.png" alt="Cliente 9">
+              <p>SEINFRA - AM</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client10.png" alt="Cliente 10">
+              <p>INSS</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client11.png" alt="Cliente 11">
+              <p>Microsoft</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client12.png" alt="Cliente 12">
+              <p>Instituto Nokia de Tecnologia - INDT</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client13.png" alt="Cliente 13">
+              <p>Moto Honda da Amazônia</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client14.png" alt="Cliente 14">
+              <p>Yamaha Motor da Amazônia</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client15.png" alt="Cliente 15">
+              <p>LG Eletronics da Amazônia</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client16.png" alt="Cliente 16">
+              <p>Philco da Amazônia</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client17.png" alt="Cliente 17">
+              <p>Athletic da Amazônia</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client18.png" alt="Cliente 18">
+              <p>HMB Indústria e Comércio</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client19.png" alt="Cliente 19">
+              <p>Labelpress</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client20.png" alt="Cliente 20">
+              <p>Tecnopar</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client21.png" alt="Cliente 21">
+              <p>Engeco</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client22.png" alt="Cliente 22">
+              <p>Prosegur</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/img/clientes/client23.png" alt="Cliente 23">
+              <p>Ramsons</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-button next" aria-label="Próximo cliente">&#10095;</button>
+      </div>
+
+
+
+      <!--
+      <div class="clientes-grid">
+        <div class="client-card">
+          <div class="client-logo">Horizonte</div>
+          <h3>Construtora Horizonte</h3>
+          <p class="project-name">Torre Empresarial Skyline</p>
+          <p>Projeto e construção de edifício comercial de 20 andares com certificação LEED.</p>
+          <a href="projetos/1.html" class="client-link">Ver Detalhes</a>
         </div>
 
-        <div class="contato-box-right">
+        <div class="client-card">
+          <div class="client-logo">Nova Era</div>
+          <h3>Grupo Nova Era</h3>
+          <p class="project-name">Condomínio Residencial Parque das Flores</p>
+          <p>Desenvolvimento de complexo residencial com 200 unidades e completa infraestrutura.</p>
+          <a href="projetos/2.html" class="client-link">Ver Detalhes</a>
+        </div>
 
-          <form autocomplete="off" id="whatsappForm" class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="first-row">
-              <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <div class="client-card">
+          <div class="client-logo">Prefeitura</div>
+          <h3>Prefeitura Municipal</h3>
+          <p class="project-name">Ponte Rio Verde</p>
+          <p>Projeto e execução de ponte urbana com 120 metros de extensão.</p>
+          <a href="projetos/3.html" class="client-link">Ver Detalhes</a>
+        </div>
+
+        <div class="client-card">
+          <div class="client-logo">Shopping</div>
+          <h3>Shopping Central</h3>
+          <p class="project-name">Expansão Shopping Central</p>
+          <p>Projeto estrutural e execução da expansão com 15.000 m² de área construída.</p>
+          <a href="projetos/4.html" class="client-link">Ver Detalhes</a>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- contato Section -->
+  <section id="contato" class="contato section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Entre em Contato</h2>
+        <p>Estamos à disposição para atender suas necessidades. Entre em contato
+          conosco para discutir seu próximo projeto ou para obter mais informações.</p>
+      </div>
+
+      <div class="contato-content">
+
+        <!-- Contato Information -->
+        <div class="contato-info">
+          <h3>Informações de Contato</h3>
+          <p>Estamos disponíveis para atendê-lo de segunda a sexta, das 8h às 18h.
+            Não hesite em entrar em contato por qualquer um dos nossos canais.</p>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="icon-phone"></i>
             </div>
-            <div class="second-row">
-              <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+            <div class="info-content">
+              <h4>Telefone</h4>
+              <p>(11) 3456-7890</p>
+              <p>(11) 98765-4321</p>
             </div>
-            <div class="third-row">
-              <textarea id="mensagem" name="message" placeholder="Menssagem..."></textarea>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="icon-mail"></i>
             </div>
-            <button class="form-btn" type="submit"><ion-icon name="logo-whatsapp"></ion-icon>Enviar Whatsapp</button>
+            <div class="info-content">
+              <h4>E-mail</h4>
+              <p>contato@TecPro.com.br</p>
+              <p>comercial@TecPro.com.br</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="icon-map"></i>
+            </div>
+            <div class="info-content">
+              <h4>Endereço</h4>
+              <p>Av. Paulista, 1000 - Bela Vista</p>
+              <p>São Paulo - SP, 01310-000</p>
+            </div>
+          </div>
+
+          <div class="hours-box">
+            <h4>Horário de Atendimento</h4>
+            <ul>
+              <li><span>Segunda - Sexta:</span> <span>8:00 - 18:00</span></li>
+              <li><span>Sábado:</span> <span>8:00 - 12:00</span></li>
+              <li><span>Domingo:</span> <span>Fechado</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- contato Form -->
+        <div class="contato-form-container">
+          <h3>Envie-nos uma mensagem</h3>
+          <form id="contatoForm" class="contato-form">
+            <div class="form-group">
+              <label for="name">Nome Completo*</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <!--
+              <div class="form-group">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                <span class="error-message" id="emailError"></span>
+              </div>
+              -->
+
+
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem*</label>
+              <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem aqui..."
+                required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="icon-send"></i>
+              Enviar Mensagem
+            </button>
           </form>
         </div>
       </div>
-    </section>
-    -->
-    <!--============ CONTATO END ============-->
-    <!--============ MAPA START ============-->
-    <!--
-    <section id="mapa">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3718.5516159916397!2d-60.008729477704335!3d-3.1022678095220595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1bcc42e88eb1%3A0xd060c21d31023a8e!2sAufiero%20%26%20Associados%20servicos!5e1!3m2!1spt-BR!2sbr!4v1728504010750!5m2!1spt-BR!2sbr"
-        width="100vw" height="50vh" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <!--============ MAPA END ============-->
-  </main>
-  <!--============ FOOTER END ============-->
-  <!--
-  <footer id="rodape">
-    <span>
-      <p class="footer_copy">Copyright © 2024 | All rights reserved Leonardo Linton.</p>
-    </span>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section id="mapa" style="width: 100%; height: 450px;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0004831058372!2d-59.99567732502903!3d-3.094529596881074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1acf96075b49%3A0xb64817250bdd3d7a!2sTecpro%20Projetos%20e%20Constru%C3%A7%C3%B5es%20Ltda%20-%20EPP!5e0!3m2!1spt-BR!2sbr!4v1747755609945!5m2!1spt-BR!2sbr"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>TecPro</h3>
+          <p>Excelência em engenharia civil com soluções inovadoras e sustentáveis para transformar o ambiente
+            construído.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="icon-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="icon-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="icon-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Projetos Estruturais</a></li>
+            <li><a href="#servicos">Construção Residencial</a></li>
+            <li><a href="#servicos">Infraestrutura</a></li>
+            <li><a href="#servicos">Consultoria</a></li>
+            <li><a href="#servicos">Laudos Técnicos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contato">
+          <h4>Contato</h4>
+          <address>
+            <p>Av. Paulista, 1000 - Bela Vista</p>
+            <p>São Paulo - SP, 01310-000</p>
+            <p>Telefone: (11) 3456-7890</p>
+            <p>Email: contato@TecPro.com.br</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> TecPro Engenharia. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
-  -->
-  <!--============ FOOTER END ============-->
 
+  <!-- Back to top button -->
+<!--   
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="icon-arrow-up"></i>
+  </button>
+-->
+  <!-- Success Message Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <i class="icon-check success-icon"></i>
+      <h3>Mensagem Enviada!</h3>
+      <p>Agradecemos seu contato. Retornaremos em breve.</p>
+    </div>
+  </div>
 
-  <!--========== JAVASCRIPT ==========-->
-  <script src="./assets/js/fomulario.js"></script>
-  <!--========== MENU MOBILE ==========-->
+  <!-- Create a sample project detail page -->
   <script src="./assets/js/menu-mobile.js"></script>
-  <!--========== AOS ANIMATION ==========-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init()</script>
-  <!--===== SWIPER JS =====-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./assets/js/swiper.js"></script>
-  <!--===== ION ICONS =====-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/header.js"></script>
+  <script src="./assets/js/clientes.js"></script>
+  <script src="./pages/projetos.html"></script>
+
 </body>
 
 </html>

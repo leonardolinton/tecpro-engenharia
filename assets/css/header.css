@@ -5,14 +5,20 @@
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    background-color: var(--color-03);
-    box-shadow: rgba(90, 90, 90, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     position: fixed;
     z-index: 100;
 }
 
+.menuNav {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.menuNav.scrolled {
+  background-color: var(--color-01);
+}
+
 #nav {
-    width: var(--max-width);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -41,7 +47,7 @@
     gap: 1rem;
 }
 
-#menu a {
+#menu .menu-link {
     display: flex;
     justify-content: center;
     padding: 0.5rem 1rem;
@@ -51,28 +57,58 @@
     position: relative;
 }
 
-#menu a:hover{
-    color: var(--color-02);
+#menu .menu-link:hover{
+    color: var(--color-03);
+}
+
+#menu .menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-03);
+    transition: width 0.3s ease;
+}
+
+#menu .menu-link:hover::after {
+    width: 100%;
+}
+
+/*==== TESTE MENU ====*/
+#menu .menu-link.active {
+  color: var(--color-03);
+  font-weight: bold;
+}
+
+#menu .menu-link.active::after{
+    width: 100%;
 }
 
 #menu .menu-bnt {
     border-radius: 5px;
-    background-color: var(--color-02);
+    background-color: var(--color-03);
     
 }
 
+#menu .menu-bnt a::after{
+    background-color: transparent;
+}
+
 #menu .menu-bnt a{
-    color: black;
+    color: var(--color-01);
 }
 
 #menu .menu-bnt a:hover{
-    color: white;
+    color: var(--color-04);
 }
 
 #btn-mobile {
     display: none;
     color: var(--color-02);
 }
+
 /*--========== HEADER END ==========*/
 
 /*--========== HEADER RESPONSIVE ==========*/
@@ -80,6 +116,10 @@
 @media (max-width: 1400px) {
     #header{
         padding: 0 5vw;
+    }
+
+    .menuNav{
+        background-color: var(--color-01);
     }
 }
 
@@ -99,7 +139,7 @@
         top: 10vh;
         right: -100vw;
 
-        background: var(--color-03);
+        background: var(--color-02);
         transition: 0.5s;
         z-index: 1000;
 
@@ -122,7 +162,7 @@
         padding: 10px;
         font-size: 15px;
         border: none;
-        background: var(--color-02);
+        background: var(--color-03);
         cursor: pointer;
         gap: 10px;
         border-radius: 5px;
@@ -131,8 +171,9 @@
     #hamburger {
         border-top: 2px solid;
         width: 20px;
-        color: var(--color-03);
+        color: var(--color-01);
     }
+
     #hamburger::after,
     #hamburger::before {
         content: "";
