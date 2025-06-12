@@ -16,22 +16,38 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.655), rgba(0, 0, 0, 0.655)), url('../img/bg_home_03.jpg') no-repeat center center;
+  background-size: cover;
 }
 
+
 .stat-box {
-  background-color: var(--color-01);
+  background-color:transparent;
   border-radius: var(--border-radius);
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   transition: var(--transition);
 }
 
-.stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow);
+.stat-box:hover{
+  transform: scale(1.1);
 }
 
 .stat-number {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--color-03);
+  margin-bottom: 0.5rem;
+}
+
+.stat-card-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-sum{
   font-size: 3.6rem;
   font-weight: 700;
   color: var(--color-03);
@@ -78,10 +94,5 @@
 .card-content h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
-}
-
-#servicos{
-  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url('../img/bg_home_01.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
 
