@@ -38,14 +38,13 @@ body {
   color: var(--color-04);
   font-size: 1.6rem;
   line-height: 1.6;
-  overflow-x: hidden;
+
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 a {
@@ -334,7 +333,17 @@ ul {
   }
 }
 
+
 /* Responsive */
+@media (max-width: 1440px) {
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+
+
 @media (max-width: 991px) {
   .sobre-content {
     grid-template-columns: 1fr;

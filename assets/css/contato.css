@@ -92,7 +92,11 @@
 }
 
 .info-content p {
-  color: rgba(247, 255, 247, 0.8);
+  color: var(--color-04);
+}
+
+.info-item h4{
+  color: var(--color-03);
 }
 
 .hours-box {
@@ -104,6 +108,7 @@
 .hours-box h4 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  color: var(--color-03);
 }
 
 .hours-box ul li {
